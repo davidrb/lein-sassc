@@ -1,4 +1,4 @@
-(defproject lein-sassc "0.10.0"
+(defproject org.clojars.aew/lein-sassc "0.10.0"
   :description "Leiningen plugin to compile SASS/SCSS files with SassC."
   :url "https://github.com/aew/lein-sassc"
   :license {:name "Eclipse Public License"
