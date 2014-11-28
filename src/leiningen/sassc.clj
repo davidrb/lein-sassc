@@ -21,8 +21,8 @@
   "Run sassc command, compile a SASS/SCSS file."
   [config]
   (let [{:keys [src output-to style import-path]} config]
-    (println (str "sassc -o " output-to " -t " style " -I " import-path " " src))
-    (shell/sh "sassc" "-o" output-to "-t" style "-I" import-path src)))
+    (println (str "sassc -t " style " -I " import-path " " src " " output-to))
+    (shell/sh "sassc" "-t" style "-I" import-path src output-to)))
 
 
 (defn- compile-node [node]
